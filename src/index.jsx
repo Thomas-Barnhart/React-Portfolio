@@ -21,9 +21,9 @@ const BrowserRouter = createBrowserRouter([
         element: <About/>,
       },
       {
-        // Route for the contact page
-        path: 'contact',
-        element: <Contact/>,
+        // Route for the portfolio page
+        path: 'Portfolio',
+        element: <Portfolio/>,
       },
       {
         // Route for the resume page
@@ -31,9 +31,9 @@ const BrowserRouter = createBrowserRouter([
         element: <Resume/>,
       },
       {
-        // Route for the portfolio page
-        path: 'portfolio',
-        element: <Portfolio/>,
+        // Route for the contact page
+        path: 'contact',
+        element: <Contact/>,
       },
     ],
   },

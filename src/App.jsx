@@ -13,15 +13,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
-        <Navigation />
-        <Switch>
+        <Header/>
+        <Navigation/>
           <Route exact path="/about" component={PortfolioPage} />
           <Route path="/contact" component={ContactPage} />
           <Route exact path="/resume" component={PortfolioPage} />
           <Route path="/portfolio" component={PortfolioPage} />
-        </Switch>
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   );

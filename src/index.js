@@ -13,7 +13,7 @@ const BrowserRouter = createBrowserRouter([
   {
     path: '/',
     // The root element of the application
-    element: <App/>,
+    element: <About/>,
     children: [
       {
         // The default route to render when no specific path matches

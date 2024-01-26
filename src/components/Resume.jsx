@@ -1,13 +1,18 @@
 import React from "react";
 
+// Functional component representing the Resume page
 const Resume = () => {
     return (
-        <div>
+        // Container div with gray background and white text
+        <div style={{ backgroundColor: "#f0f0f0", color: "#ffffff", padding: "20px" }}>
             <h1>Resume</h1>
+            {/* Link to download the resume with white text */}
             <p>
-            <a href="">My Resume</a>
+                <a href="" style={{ color: "#ffffff" }}>My Resume</a>
+                {/* Section for front-end and back-end proficiencies */}
                 <section>
                     <h2>Front-end Proficiencies</h2>
+                    {/* Unordered list of front-end proficiencies */}
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -18,6 +23,7 @@ const Resume = () => {
                         <li>Bootstrap</li>
                     </ul>
                     <h2>Back-end Proficiencies</h2>
+                    {/* Unordered list of back-end proficiencies */}
                     <ul>
                         <li>APIs</li>
                         <li>Node</li>

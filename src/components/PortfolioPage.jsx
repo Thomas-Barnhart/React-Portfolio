@@ -1,7 +1,7 @@
-// pages/PortfolioPage.js
 import React from 'react';
 import Project from '../components/Project';
 
+// Array of project data
 const projects = [
   {
     title: "WaveExchange",
@@ -27,10 +27,12 @@ const projects = [
 
 const PortfolioPage = () => {
   return (
-    <div>
+    // Portfolio page with gray background and white text
+    <div style={{ backgroundColor: "#f0f0f0", color: "#ffffff", padding: "20px" }}>
       <h1>Portfolio</h1>
-      {projects.map(project => (
-        <Project key={project.id} title={project.title} description={project.description} />
+      {/* Mapping through projects array and rendering Project component for each project */}
+      {projects.map((project, index) => (
+        <Project key={index} project={project} />
       ))}
     </div>
   );

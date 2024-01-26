@@ -1,29 +1,33 @@
-// pages/ContactPage.js
 import React from 'react';
 
 const ContactPage = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#f0f0f0", color: "#ffffff", padding: "20px" }}>
+      {/* Contact heading */}
       <h1>Contact Me</h1>
       {/* Contact form */}
       <form>
-        <div>
-          <label htmlFor="name">Name:</label>
+        {/* Name input */}
+        <div style={{ marginBottom: "15px" }}>
+          <label htmlFor="name" style={{ marginRight: "10px" }}>Name:</label>
           <input type="text" id="name" name="name" />
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
+        {/* Email input */}
+        <div style={{ marginBottom: "15px" }}>
+          <label htmlFor="email" style={{ marginRight: "10px" }}>Email:</label>
           <input type="email" id="email" name="email" />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
+        {/* Message input */}
+        <div style={{ marginBottom: "15px" }}>
+          <label htmlFor="message" style={{ marginRight: "10px" }}>Message:</label>
           <textarea id="message" name="message" rows="4" />
         </div>
-        <button type="submit">Submit</button>
+        {/* Submit button */}
+        <button type="submit" style={{ backgroundColor: "#333333", color: "#ffffff", padding: "10px 20px", border: "none", borderRadius: "5px" }}>Submit</button>
       </form>
 
       {/* Contact information */}
-      <div>
+      <div style={{ marginTop: "20px" }}>
         <h2>Contact Information:</h2>
         <p>Email: tmbarnhart1@gmail</p>
         <p>Phone: 919-523-2178</p>
